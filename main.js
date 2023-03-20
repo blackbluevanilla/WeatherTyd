@@ -38,7 +38,6 @@ async function getCityWeather(event) {
     return;
   }
 
-
   fillTabNow(cityName, cityWeatherData);
   fillTabDetails(cityName, cityWeatherData);
 }
