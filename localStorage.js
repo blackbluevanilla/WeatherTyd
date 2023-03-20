@@ -10,7 +10,7 @@ export function createLocalStorage(array) {
 export function fillTabsByDefault() {
   TAB_NOW.CURRENT_CITY_NAME.textContent = "...Waiting";
   TAB_NOW.CURRENT_TEMPERATURE.textContent = `${0}°`;
-  TAB_NOW.CLOUD.src = `img/icons8-cloud-96.svg`;
+  TAB_NOW.CLOUD.src = `icons8-cloud-96.svg`;
 }
 
 
