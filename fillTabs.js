@@ -4,18 +4,18 @@ export function fillTabNow(cityName, cityWeatherData) {
   const currentTempValue = cityWeatherData.main.temp;
   TAB_NOW.CURRENT_CITY_NAME.textContent = cityName;
   TAB_NOW.CURRENT_TEMPERATURE.textContent = `${Math.trunc(currentTempValue)}°`;
-  TAB_NOW.IMG_LIKE.src = "img/Shape.svg";
+  TAB_NOW.IMG_LIKE.src = "Shape.svg";
 
   if (cityName === "Vaskelovo" || cityName === "Васкелово") {
-    TAB_NOW.CLOUD.src = "img/kgl3N5t7YyI.jpg";
+    TAB_NOW.CLOUD.src = "kgl3N5t7YyI.jpg";
   } else if (cityName === "Кингисепп" || cityName === "Ивановское") {
-    TAB_NOW.CLOUD.src = "img/wlTyS8J-K_Q.jpg";
+    TAB_NOW.CLOUD.src = "wlTyS8J-K_Q.jpg";
   } else if (
     cityName === "Гагра" ||
     cityName === "Гагры" ||
     cityName === "Пицунда"
   ) {
-    TAB_NOW.CLOUD.src = "img/b3EP48Ie3pE.jpg";
+    TAB_NOW.CLOUD.src = "b3EP48Ie3pE.jpg";
   } else {
     const cloudIcon = cityWeatherData.weather[0].icon;
     TAB_NOW.CLOUD.src = `https://openweathermap.org/img/wn/${cloudIcon}@4x.png`;
