@@ -1,11 +1,11 @@
-import { SERVER, FORM, TAB_NOW } from "./scripts/constants.js";
+import { SERVER, FORM, TAB_NOW } from "./constants.js";
 import {
   ADDED_LOCATIONS_LIST,
   createLocalStorage,
   fillTabsByDefault,
 } from "./scripts/localStorage.js";
-import { clearAddedLocations, clearTabs } from "./scripts/clearFunctions.js";
-import { fillTabNow, fillTabDetails } from "./scripts/fillTabs.js";
+import { clearAddedLocations, clearTabs } from "./clearFunctions.js";
+import { fillTabNow, fillTabDetails } from "./fillTabs.js";
 
 FORM.FORM_FIELD.addEventListener("submit", getCityWeather);
 TAB_NOW.BUTTON_ADD_CITY.addEventListener("click", addFavoiriteCity);
